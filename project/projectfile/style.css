@@ -1,0 +1,37 @@
+
+#explanation {
+    position:relative;
+    height:auto;
+    padding:15px 20px;
+    margin:auto;
+}
+button {
+    background-color:rgba(255,255,255,0.7);;
+    padding:5px;
+    border:1px solid #ccc;
+    font-size:0.8em;			
+}
+.over {
+    position:absolute;
+    left:100px;
+    top:20px;
+}
+.detail {
+    width:700px;
+    text-align:left;			
+    line-height:1.4;
+    display:none;
+}
+#cover { border: 5px solid transparent;}
+
+#container {
+    position:absolute;
+    top:120px;    
+    left:700px;
+}
+
+#countdown {
+    position:absolute;
+    top:400px;
+    left:940px;
+}
