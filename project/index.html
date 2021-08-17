@@ -73,7 +73,7 @@
                 <label><input type="radio" name="cycle" value=6>6번</label>
             </fieldset>
 
-            <fieldset> //이제 버튼을 누르면 정해진 값을 불러와 시간이 카운트 다운 되어야 함
+            <fieldset>
                 <button id="startTimer" onclick="bringValue()"> -></button>
 
             </fieldset>
@@ -84,7 +84,7 @@
         var selectCycle = document.testForm.cycle;
 
         
-        function bringValue() //타이머시작을 위한 값 가져오기 //일단 알람으로 값을 가져오는지 봅시다.
+        function bringValue() //타이머시작을 위한 값 가져오기 //일단 알람으로 값을 가져오는지 확인.
         {
         var selectedText = selectFocusTime.options[selectFocusTime.selectedIndex].value;
         var selectedText2 = selectBreakTime.options[selectBreakTime.selectedIndex].value;
