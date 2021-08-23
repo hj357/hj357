@@ -1,10 +1,89 @@
-# hj357.github.io/
-<H1> 홈페이지 </H1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<a href="project/">web project</a>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
 
-<h1> 예제 </h1>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-<a href="ch8/">chapter 8</a><br>
-<a href="ch9/">chapter 9</a>
-<a href="copy/">copy</a>
+    <!-- My JS -->
+    <script src="projectfile/timer.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="projectfile/timerStyle.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+
+
+    <title>Pomodoro Timer</title>
+  </head>
+
+<body>
+    <div id="explanation">
+
+        <button id="open" onclick="showDetail()">
+            <img src="projectfile/stopwatch.png"> 
+            <img src="projectfile/tomato.png">  뽀모도로 타이머란?</button>
+        <div id="describe" class="detail" style.display = "block" >
+            <p>뽀모도로(Pomodoro)란 이탈리아어로 토마토라는 뜻이다. <br>요리에 사용되는 토마토 모양의 타이머에서 유래된 학습법이며 <br>
+                20분~45분의 집중과 5분~15분 휴식을 여러번 반복하는 학습법이다.</p>
+            <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+        </div>
+    </div>
+
+  <body onload="template()">
+    <div class="container">
+      <!-- Heading -->
+      <h1 class="text-center my-5 heading">Pomodoro App</h1>
+
+<!-- Main Timer -->
+      <div class="container timer">
+        <div class="row">
+          <div class="col-5">
+            <h4 id="minutes"></h4>
+          </div>
+          <div class="col-2">
+            <h4>:</h4>
+          </div>
+          <div class="col-5">
+            <h4 id="seconds"></h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finished Message -->
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
+      </div>
+
+      <!-- Start Button and reset button-->
+      <div class="conatiner d-flex justify-content-center my-5">
+        <button class="btn" onclick="start_timer()">
+          <i class="fas fa-play fa-2x"></i>
+        </button>
+          <i class="fas fa-redo-alt fa-2x"></i></a>
+      </div>
+    </div>
+  </body>
+
+    <script src="projectfile/timer.js">
+    </script>
+
+    <audio id="focusBuzzer" src="projectfile/focusbuzzer.mp3" type="audio.mpeg"></audio>
+    <audio id="breakBuzzer" src="projectfile/breakbuzzer.mp3" type="audio.mpeg"></audio>
+   
+
+</body>
+    
+</html>
