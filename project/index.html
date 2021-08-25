@@ -37,7 +37,7 @@
             <img src="projectfile/tomato.png">  뽀모도로 타이머란?</button>
         <div id="describe" class="detail" style.display = "block" >
             <p>뽀모도로(Pomodoro)란 이탈리아어로 토마토라는 뜻이다. <br>요리에 사용되는 토마토 모양의 타이머에서 유래된 학습법이며 <br>
-                20분~45분의 집중과 5분~15분 휴식을 여러번 반복하는 학습법이다.</p>
+                25분의 집중과 5분 휴식을 여러번 반복하는 학습법이다.</p>
             <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
         </div>
     </div>
@@ -45,7 +45,7 @@
   <body onload="template()">
     <div class="container">
       <!-- Heading -->
-      <h1 class="text-center my-5 heading">Pomodoro App</h1>
+      <h1 class="text-center my-5 heading">Pomodoro Timer</h1>
 
 <!-- Main Timer -->
       <div class="container timer">
@@ -72,17 +72,14 @@
         <button class="btn" onclick="start_timer()">
           <i class="fas fa-play fa-2x"></i>
         </button>
-          <i class="fas fa-redo-alt fa-2x"></i></a>
+          <i class="fas fa-redo-alt fa-2x" onclick="reset()"></i></a>
       </div>
     </div>
   </body>
 
-    <script src="projectfile/timer.js">
+    <script src="projectfile/timer2.js">
     </script>
 
-    <audio id="focusBuzzer" src="projectfile/focusbuzzer.mp3" type="audio.mpeg"></audio>
-    <audio id="breakBuzzer" src="projectfile/breakbuzzer.mp3" type="audio.mpeg"></audio>
-   
 
 </body>
     
