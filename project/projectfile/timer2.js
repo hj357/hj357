@@ -16,7 +16,7 @@ var breakSound  = new Audio("projectfile/breakbuzzer.mp3");
 
 // Required variables
 var session_seconds = "00";
-var session_minutes = 25;
+var session_minutes = 1;
 
 // Starting template for the timer
 function template() {
@@ -30,7 +30,7 @@ function template() {
 function start_timer() {
   focusSound.play();
 
-  session_minutes = 24;
+  session_minutes = 0;
   session_seconds = 59;
 
   document.getElementById("minutes").innerHTML = session_minutes;
@@ -73,7 +73,7 @@ function start_timer() {
   function breakTimer(){
     focusSound.play();
 
-    session_minutes = 4;
+    session_minutes = 0;
     session_seconds = 60;
   
 
