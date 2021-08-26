@@ -1,0 +1,10 @@
+body {
+    background: #272343;
+    color:#ffffff;
+  }
+
+#mediaTable{
+    width:fit-content;
+    height:fit-content;
+    text-align: center;
+}
