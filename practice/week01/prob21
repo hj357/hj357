@@ -1,0 +1,28 @@
+정수 둘을 넣으면, 그 둘의 최소 공배수를 반환하는 함수를 작성해주세요
+
+        let x = parseInt(prompt("정수 1"));
+        let y = parseInt(prompt("정수 2"));
+
+        if (x<y){
+            x = y;
+            y = x;
+        }
+
+
+
+        function LCD(x,y){
+            
+            let theRest = x % y;
+            let lcd = 0;
+
+            if (theRest === 0){
+                lcd = (x * y)/y;
+                document.write(lcd);                
+            }
+            else{
+                lcd = (x * y)/theRest;
+                document.write(lcd);
+            }
+        }
+        document.write(LCD(x,y));
+        
