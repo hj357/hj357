@@ -1,0 +1,13 @@
+ https://www.acmicpc.net/problem/10987 를 푸시오 / 모음의 개수
+ 
+        let x = ["a", "e", "i", "o", "u"];
+        let y = prompt("알파벳 소문자만","baekjoon");
+        let count = 0;
+        for(var i = 0; i < x.length; i++){ //모음 배열만큼 반복
+            for(var j =0; j < y.length; j++){ //문자수만큼 반복
+                if (x[i] == y[j]) {
+                    count += 1;     
+                } 
+            }        
+        }
+        document.write(count);
