@@ -1,0 +1,5 @@
+string 1개를 입력으로 받아, 해당 문자에 존재하는 ,의 개수를 출력하는 함수를 작성하시오.
+
+let str = prompt("문장을 입력하세요.", "월,화,수,목,금,토,일");
+        let arr = str.split(",");
+        document.write(arr.length-1);
