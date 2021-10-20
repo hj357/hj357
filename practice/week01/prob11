@@ -1,0 +1,21 @@
+https://www.acmicpc.net/problem/14681 사분면 고르기
+
+        let x = prompt("x값");
+        let y = prompt("y값")
+        if (x>0){
+            if (y>0){
+                document.write(1);
+            }
+            else{
+                document.write(4);
+            }
+        }
+        else{
+            if(y>0){
+                document.write(2);
+            }
+            else{
+                document.write(3);
+            }
+        }
+
